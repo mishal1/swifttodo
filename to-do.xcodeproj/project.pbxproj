@@ -13,6 +13,7 @@
 		D0FF7C931B2853BC00F238A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FF7C921B2853BC00F238A6 /* Images.xcassets */; };
 		D0FF7C961B2853BC00F238A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FF7C941B2853BC00F238A6 /* LaunchScreen.xib */; };
 		D0FF7CA21B2853BC00F238A6 /* to_doTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF7CA11B2853BC00F238A6 /* to_doTests.swift */; };
+		D0FF7CAE1B2879C400F238A6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF7CAD1B2879C400F238A6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D0FF7C9B1B2853BC00F238A6 /* to-doTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "to-doTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FF7CA01B2853BC00F238A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FF7CA11B2853BC00F238A6 /* to_doTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = to_doTests.swift; sourceTree = "<group>"; };
+		D0FF7CAD1B2879C400F238A6 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		D0FF7C7D1B2853BC00F238A6 = {
 			isa = PBXGroup;
 			children = (
+				D0FF7CAD1B2879C400F238A6 /* SignUpViewController.swift */,
 				D0FF7C881B2853BC00F238A6 /* to-do */,
 				D0FF7C9E1B2853BC00F238A6 /* to-doTests */,
 				D0FF7C871B2853BC00F238A6 /* Products */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FF7CAE1B2879C400F238A6 /* SignUpViewController.swift in Sources */,
 				D0FF7C8E1B2853BC00F238A6 /* ViewController.swift in Sources */,
 				D0FF7C8C1B2853BC00F238A6 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				D0FF7CA71B2853BC00F238A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0FF7CA81B2853BC00F238A6 /* Build configuration list for PBXNativeTarget "to-doTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				D0FF7CAA1B2853BC00F238A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
