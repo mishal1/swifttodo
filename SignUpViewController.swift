@@ -23,12 +23,27 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUp() {
-        let user = PFObject(className: "Users")
-        user["email"] = emailField.text
-        user["password"] = passwordField.text
-        user.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
+        var email = emailField.text
+        var query = PFQuery(className:"Users")
+        query.whereKey("email", equalTo: email)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]?, error: NSError?) -> Void in
+            if error == nil {
+                if objects!.count == 0 {
+                    let user = PFObject(className: "Users")
+                    user["email"] = email
+                    user["password"] = self.passwordField.text
+                    user.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                        println("Object has been saved.")
+                    }
+                } else {
+                    println("Email exists")
+                }
+                
+            }
         }
+        
+        
     }
     
 
