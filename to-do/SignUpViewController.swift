@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -23,12 +22,10 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUp() {
-        let user = PFObject(className: "Users")
-        user["email"] = emailField.text
-        user["password"] = passwordField.text
-        user.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
+        var email = emailField.text
+        var password = passwordField.text
+        println(email)
+        println(password)
     }
     
 
